@@ -55,9 +55,22 @@ subprojects {
         }
     }
 
+    task sourcesJar(type: Jar) {
+        from sourceSets.main.allJava
+        classifier = 'sources'
+    }
+
+    task javadocJar(type: Jar) {
+        from javadoc
+        classifier = 'javadoc'
+    }
+
     publishing {
         publications {
             maven(MavenPublication) {
+                artifact sourcesJar
+                artifact javadocJar
+
                 from components.java
             }
         }
