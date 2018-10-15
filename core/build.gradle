@@ -1,0 +1,3 @@
+dependencies {
+    compile 'org.spongepowered:configurate-core:3.6'
+}

@@ -1,0 +1,4 @@
+rootProject.name = 'tCfg-parent'
+
+include 'core'
+include 'hocon', 'yaml'

@@ -1,0 +1,4 @@
+dependencies {
+    compile project(':core')
+    compile 'org.spongepowered:configurate-yaml:3.6'
+}
